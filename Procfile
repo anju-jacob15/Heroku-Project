@@ -1,1 +1,1 @@
-web: gunicorn Grocery:app
+web:node index.html
