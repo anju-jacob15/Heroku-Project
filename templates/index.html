@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ML API</title>
+	<style>
+		table, th, td {
+  		border: 1px solid black;
+  		border-collapse: collapse;
+		}
+		th, td {
+  			padding: 15px;
+  			text-align: left;
+		}
+		input{
+		padding: 15px;
+  			text-align: left
+		}
+		container {  
+		width: 300px;  
+		height: 300px;
+		display: flex;  
+		justify-content: center;  
+		align-items: center;    
+		}
+	</style>
+    </head>
+    <body style="background-color:lightblue">
+        <div class="container" >
+            <h1 align="center">Grocery Data Analysis</h1>
+		
+		<p align="center">Grocery Data Analysis is used to promote the profitable business by telling which product has more chances of being bought with the given item thus increasing sales.</p>
+
+            <form action="{{url_for('calculate')}}" method="post">
+                
+                <table border="1px" align="center" >
+		<tr>
+		<td style="text-align:center"> <label for="f1">Enter a grocery item:<br> <small>For ex: baking powder,chicken,<br>nut snack,onions,chocolate,etc.</small></label></td>
+
+                <td ><input type="text" placeholder="Specific data" name="value2" required="required" /></td>
+		</tr>
+		<tr>
+		
+		<td ><input type="submit" name="submit_button" value="View All Datasets" style="height:60px;width:150px";></td>
+                <td ><input type="submit" name="submit_button" value="Submit" style="height:60px;width:170px"></td>
+            </form>
+            
+            <br>
+            <br>
+            {{prediction_test1}}
+            <br>
+            <br>
+            {{prediction_test2}}
+        </div>
+        
+    </body>
+</html>
