@@ -15,7 +15,6 @@ brotlipy==0.7.0
 cachetools==4.2.2
 certifi==2020.12.5
 comtypes==1.1.9
-conda-verify==3.4.2
 contextlib2==0.6.0.post1
 cycler==0.10.0
 cytoolz==0.11.0
