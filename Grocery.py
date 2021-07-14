@@ -81,7 +81,7 @@ def home():
 @app.route('/calculate',methods=['POST'])
 def calculate():
     
-    val2=request.form['value2'].lower()
+    val2=request.form['value2']
     
     
     if request.form['submit_button'] == 'View All Datasets':
