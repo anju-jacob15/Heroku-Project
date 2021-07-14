@@ -14,7 +14,7 @@ from flask import Flask,request,jsonify,render_template
 # In[3]:
 
 
-data = pd.read_csv("C:\\Users\\ANJU SUSAN\\Downloads\\basket.csv")
+data = pd.read_csv("C:\\Users\\ANJU SUSAN\\Downloads/basket.csv")
 
 
 # In[4]:
