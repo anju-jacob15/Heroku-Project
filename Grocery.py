@@ -42,15 +42,14 @@ len(results)
 
 
 def all1():
-    outputArray=[]
+    output=""
     for item in results: 
         pair = item[0]   
         items = [x for x in pair]  
         
         if len(items) > 1:
-            output=items[0],items[1],str(item[1]),str(item[2][0][2]),str(item[2][0][3])
-            outputArray.append(output)       
-    return outputArray
+            output+="\n["+items[0]+"->"+items[1]+"\tSupport: "+str(item[1])+"\tConfidence: "+str(item[2][0][2])+"\tLift: "+str(item[2][0][3])+"]\n"       
+    return output
 
 
 # In[8]:
@@ -82,7 +81,7 @@ def home():
 @app.route('/calculate',methods=['POST'])
 def calculate():
     
-    val2=request.form['value2']
+    val2=request.form['value2'].lower()
     
     
     if request.form['submit_button'] == 'View All Datasets':
