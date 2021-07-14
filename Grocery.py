@@ -7,8 +7,6 @@
 import numpy as np
 import pandas as pd
 from apyori import apriori
-from mlxtend.frequent_patterns import association_rules
-import pickle
 import matplotlib.pyplot as plt
 from flask import Flask,request,jsonify,render_template
 
