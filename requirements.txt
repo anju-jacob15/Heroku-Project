@@ -64,7 +64,6 @@ QDarkStyle==2.8.1
 QtPy==1.9.0
 scikit-image==0.18.1
 simplegeneric==0.8.1
-sip==4.19.13
 smmap==4.0.0
 sns==0.1
 statsmodels==0.12.2
