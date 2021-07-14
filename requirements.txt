@@ -10,5 +10,4 @@ scikit-learn
 matplotlib
 pandas
 apriori
-association_rules
 pickle
